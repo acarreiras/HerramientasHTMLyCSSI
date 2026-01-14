@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Santiago de Compostela | Conoce Galicia</title>
+    <meta name="description" content="Explora Santiago de Compostela: historia, arte y espiritualidad en el corazón de Galicia.">
+    <link rel="stylesheet" href="./css/styles.scss" >
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  </head>
+  <body>
+    <header>
+      <h1>Conoce Galicia</h1>
+      <nav aria-label="Navegación principal">
+        <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
+        
+        <label for="menu-hamburguesa" class="icono-hamburguesa">
+          <span class="sr-only">Abrir menú</span>
+          <svg
+            class="icono-svg"
+            width="32"
+            height="32"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+          >
+            <line x1="20" y1="30" x2="80" y2="30" />
+            <line x1="20" y1="50" x2="80" y2="50" />
+            <line x1="20" y1="70" x2="80" y2="70" />
+          </svg>
+        </label>
+
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./destinos.html">Destinos</a></li>
+          <li><a href="./links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero">
+        <picture>
+          <!--AVIF, más óptimo-->
+          <source
+            media="(max-width: 640px)"
+            srcset="images/SantiagoCompostela4.jpg?as=avif&width=600"
+            type="image/avif">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="images/SantiagoCompostela4.jpg?as=avif&width=1400"
+            type="image/avif">
+
+
+          <!--Webp, segundo más óptimo-->
+          <source
+            media="(max-width: 640px)"
+            srcset="images/SantiagoCompostela4.jpg?as=webp&width=600"
+            type="image/webp">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="images/SantiagoCompostela4.jpg?as=webp&width=1400"
+            type="image/webp">
+
+
+          <img src="images/SantiagoCompostela4.jpg" alt="Plaza del Obradoiro de Santiago de Compostela" class="hero-img">
+
+        </picture>
+        
+        <div class="hero-texto">
+          <h2>Santiago de Compostela</h2>
+        </div>
+      </section>
+
+      <section class="info">
+        <h2>Santiago de Compostela</h2>
+        <article data-aos="fade-up">
+          <img 
+          src="./images/SantiagoCompostela1.png" 
+
+          srcset="./images/SantiagoCompostela1.png 1x,
+                  ./images/SantiagoCompostela1.png?width=800 2x"
+
+          alt="Plaza del Obradoiro"
+          loading="lazy">
+          <div class="texto">
+            <h3>La plaza del Obradoiro</h3>
+            <p>La Plaza del Obradoiro es el alma de Santiago de Compostela y uno de los espacios urbanos más emblemáticos de España. Su nombre proviene del gallego «obradoiro», que significa «taller», en referencia a los artesanos que trabajaban allí durante la construcción de la catedral. Esta majestuosa plaza es el punto final del Camino de Santiago, y por eso es común ver a peregrinos emocionados al llegar, celebrando el fin de su recorrido. Aquí confluyen algunos de los edificios más importantes de la ciudad, representando distintos poderes históricos.</p>
+          </div>
+        </article>
+        <article data-aos="fade-right">
+          <img 
+
+          srcset="./images/SantiagoCompostela2.png?width=400 400w,
+                  ./images/SantiagoCompostela2.png?width=800 800w,
+                  ./images/SantiagoCompostela2.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+
+          src="./images/SantiagoCompostela2.png" 
+          alt="Imagen del Monasterio Pinario"
+          loading="lazy">
+          <div class="texto">
+            <h3>Monasterio Pinario</h3>
+            <p>Una de sus grandes joyas es el Monasterio Pinario. Se trata del segundo conjunto monástico más grande de España, solo superado por El Escorial, y una auténtica joya del barroco gallego. Originalmente fundado en el siglo X, el edificio actual fue levantado entre los siglos XVI y XVIII, y destaca por su imponente fachada, su claustro monumental y su iglesia de tres naves con una espectacular decoración barroca. El retablo mayor, dedicado a San Martín de Tours, es una obra maestra de la escultura religiosa.</p>
+          </div>
+        </article>
+        <article data-aos="fade-left">
+          <img 
+
+          srcset="./images/SantiagoCompostela3.png?width=400 400w,
+                  ./images/SantiagoCompostela3.png?width=800 800w,
+                  ./images/SantiagoCompostela3.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+
+          src="./images/SantiagoCompostela3.png" 
+          alt="Imagen de Santiago el Mayor"
+          loading="lazy">
+          <div class="texto">
+            <h3>Santiago el Mayor</h3>
+            <p>La historia de Santiago de Compostela está profundamente ligada a la figura de Santiago el Mayor, uno de los doce apóstoles de Jesús y el primero en sufrir martirio. Según la tradición cristiana, tras predicar en la Península Ibérica, Santiago regresó a Jerusalén, donde fue decapitado por orden del rey Herodes en el año 44 d.C. Cuenta la leyenda que sus discípulos trasladaron su cuerpo en una barca de piedra hasta las costas gallegas, desembarcando en Padrón y enterrándolo en el lugar donde siglos más tarde se descubriría su tumba: el bosque de Libredón, hoy el corazón de Santiago de Compostela.</p>
+          </div>
+        </article>
+      </section>
+      <section class="video" data-aos="fade-down">
+        <h2>Descubre Santiago de Compostela</h2>
+        <iframe  src="https://www.youtube.com/embed/HiIznrJhaq0?si=hIs-s7pJGBZZ5d0c" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Conoce Galicia — Herramientas HTML y CSS I</p>
+    </footer>
+
+    <script type="module" src="./js/scripts.js" defer></script>
+  </body>
+</html>

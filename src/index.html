@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Conoce Galicia</title>
+    <meta name="description" content="Descubre los rincones más impactantes de Galicia: playas,  historia y gastronomía única.">
+    <link rel="stylesheet" href="./css/styles.scss" >
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+  </head>
+  <body>
+    <header>
+      <h1>Conoce Galicia</h1>
+      <nav aria-label="Navegación principal">
+        <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
+
+        <label for="menu-hamburguesa" class="icono-hamburguesa">
+          <span class="sr-only">Abrir menú</span>
+          <svg
+            class="icono-svg"
+            width="32"
+            height="32"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+          >
+            <line x1="20" y1="30" x2="80" y2="30" />
+            <line x1="20" y1="50" x2="80" y2="50" />
+            <line x1="20" y1="70" x2="80" y2="70" />
+          </svg>
+        </label>
+
+        <!--<label for="menu-hamburguesa" class="icono-hamburguesa">Menú</label>-->
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./destinos.html">Destinos</a></li>
+          <li><a href="./links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero">
+        <picture>
+          <!--AVIF, más óptimo-->
+          <source
+            media="(max-width: 640px)"
+            srcset="
+              images/PlayaCatedrales1.png?as=avif&width=600"
+            type="image/avif">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="
+              images/PlayaCatedrales1.png?as=avif&width=1400"
+            type="image/avif">
+
+
+          <!--Webp, segundo más óptimo-->
+           <source
+            media="(max-width: 640px)"
+            srcset="
+              images/PlayaCatedrales1.png?as=webp&width=600"
+            type="image/webp">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="
+              images/PlayaCatedrales1.png?as=webp&width=1400"
+            type="image/webp">
+
+
+
+            <img src="images/PlayaCatedrales1.png" alt="Playa de las Catedrales de Lugo" class="hero-img">
+
+        </picture>
+        
+        <div class="hero-texto">
+          <h2>Explora la magia del norte</h2>
+          <p>Galicia te espera con su naturaleza, su cultura, su mar y su gente.</p>
+          <a href="./destinos.html" class="boton">Descubrir destinos</a>
+        </div>
+      </section>
+
+      <section class="destinos">
+        <h2>Destinos destacados</h2>
+        <article>
+          <img
+          src="./images/SantiagoCompostela1.png"
+          srcset="./images/SantiagoCompostela1.png?width=400 400w,
+                  ./images/SantiagoCompostela1.png?width=800 800w,
+                  ./images/SantiagoCompostela1.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+          alt="Catedral de Santiago de Compostela"
+          loading="lazy">
+          <h2>Santiago de Compostela</h2>
+          <p>Adentrate en la historia más profunda de Galicia</p>
+          <p><a href="./santiago" class="boton">Ver más</a></p>
+        </article>
+        <article>
+          <img 
+          src="./images/playaCatedrales2.png"
+          srcset="./images/playaCatedrales2.png?width=400 400w,
+                  ./images/playaCatedrales2.png?width=800 800w,
+                  ./images/playaCatedrales2.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw" 
+          alt="Playa de las Catedrales de Lugo"
+          loading="lazy">
+          <h2>Playa de las catedrales</h2>
+          <p>Un maravilloso paisaje en la costa lucense.</p>
+          <p><a href="./catedrales" class="boton">Ver más</a></p>
+        </article>
+        <article>
+          <img 
+          src="./images/RibeiraSacra1.png"
+          srcset="./images/RibeiraSacra1.png?width=400 400w,
+                  ./images/RibeiraSacra1.png?width=800 800w,
+                  ./images/RibeiraSacra1.png?width=1200 1200w" 
+          sizes="(max-width: 640px) 100vw, 33vw" 
+          alt="Catedral de Santiago de Compostela"
+          loading="lazy">
+          <h2>Ribera Sacra</h2>
+          <p>Disfruta de una de las joyas de Lugo, el vino de la Ribeira Sacra.</p>
+          <p><a href="#" class="boton">Ver más</a></p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Conoce Galicia — Herramientas HTML y CSS I</p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Playas de la Catedral | Conoce Galicia</title>
+    <meta name="description" content="Descubre los rincones más impactantes de Galicia: playas,  historia y gastronomía única.">
+    <link rel="stylesheet" href="./css/styles.scss">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  </head>
+  <body>
+    <header>
+      <h1>Conoce Galicia</h1>
+      <nav aria-label="Navegación principal">
+        <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
+        
+        <label for="menu-hamburguesa" class="icono-hamburguesa">
+          <span class="sr-only">Abrir menú</span>
+          <svg
+            class="icono-svg"
+            width="32"
+            height="32"
+            viewBox="0 0 100 100"
+            aria-hidden="true"
+          >
+            <line x1="20" y1="30" x2="80" y2="30" />
+            <line x1="20" y1="50" x2="80" y2="50" />
+            <line x1="20" y1="70" x2="80" y2="70" />
+          </svg>
+        </label>
+
+        <ul class="menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./destinos.html">Destinos</a></li>
+          <li><a href="./links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero">
+        <picture>
+          
+          <!--AVIF, más óptimo-->
+          <source
+            media="(max-width: 640px)"
+            srcset="images/PlayaCatedrales1.png?as=avif&width=600"
+            type="image/avif">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="images/PlayaCatedrales1.png?as=avif&width=1400"
+            type="image/avif">
+
+
+          <!--Webp, segundo más óptimo-->
+          <source
+            media="(max-width: 640px)"
+            srcset="images/PlayaCatedrales1.png?as=webp&width=600"
+            type="image/webp">
+
+          <source
+            media="(min-width: 641px)"
+            srcset="images/PlayaCatedrales1.png?as=webp&width=1400"
+            type="image/webp">
+
+          <img src="./images/PlayaCatedrales1.png" alt="Descubre la Playa de las Catedrales, uno de los paisajes naturales más impresionantes de Galicia." class="hero-img">
+
+        </picture>
+
+
+        
+        <div class="hero-texto">
+          <h2>Playa de Las Catedrales</h2>
+        </div>
+      </section>
+
+      <section class="info">
+        <h2>La playa de Las Catedrales</h2>
+        <article data-aos="fade-up">
+          <img 
+
+          srcset="./images/PlayaCatedrales4.png?width=400 400w,
+                  ./images/PlayaCatedrales4.png?width=800 800w,
+                  ./images/PlayaCatedrales4.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+
+          src="./images/PlayaCatedrales4.png" alt="Playa de la Catedrales"
+          loading="lazy">
+          <div class="texto">
+            <h3>La playa de Las Catedrales</h3>
+            <p>La playa de Las Catedrales (en gallego, praia das Catedrais) es el nombre turístico de la playa de Aguas Santas (en gallego, praia de Augas Santas), situada en el municipio gallego de Ribadeo (parroquia de Devesa), en la costa de la provincia de Lugo, España, sobre el mar Cantábrico. Está a unos diez kilómetros al oeste de la localidad de Ribadeo. Es conocida por este nombre debido a la apariencia de sus acantilados. Está declarada monumento natural por la Consejería de Medio Ambiente de la Junta de Galicia.</p>
+          </div>
+        </article>
+        <article data-aos="fade-right">
+          <img 
+
+          srcset="./images/playaCatedrales2.png?width=400 400w,
+                  ./images/playaCatedrales2.png?width=800 800w,
+                  ./images/playaCatedrales2.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+
+          src="./images/playaCatedrales2.png" alt="Playa de las catedrales, mareas"
+          loading="lazy">
+          <div class="texto">
+            <h3>El espectáculo de las mareas</h3>
+            <p>Lo característico de la playa son los arcos y las cuevas marinas, solo apreciables a pie de playa durante la bajamar. Durante la pleamar la playa es relativamente pequeña, de fina arena y sigue siendo adecuada para el baño. Es interesante ver la playa con la marea alta recorriendo la parte superior de los acantilados en dirección oeste-este hacia la playa de Esteiro y verla con marea baja sobre la arena de la playa.</p>
+          </div>
+        </article>
+        <article data-aos="fade-left">
+          <img 
+
+          srcset="./images/PlayaCatedrales3.png?width=400 400w,
+                  ./images/PlayaCatedrales3.png?width=800 800w,
+                  ./images/PlayaCatedrales3.png?width=1200 1200w"
+          sizes="(max-width: 640px) 100vw, 33vw"
+
+          src="./images/PlayaCatedrales3.png" alt="Cueva playa de las catedrales"
+          loading="lazy">
+          <div class="texto">
+            <h3>Los arcos naturales de la catedral</h3>
+            <p>Durante la marea baja puede accederse a un largo arenal delimitado por una pared rocosa de pizarra y esquisto erosionada en formas caprichosas: arcos de más de treinta metros de altura que recuerdan a arbotantes de una catedral, grutas de decenas de metros, pasillos de arena entre bloques de roca y otras curiosidades. Con las mareas vivas, en las que las mareas bajan más y suben más que las mareas normales, incluso se puede acceder a las playas vecinas por la arena, aunque eso sí se debe tener precaución y volver antes de que comience a subir la marea ya que el nivel del mar sube rápidamente puesto que se trata de un tramo de costa prácticamente horizontal perteneciente a la Rasa Cantábrica. La playa tiene este relieve debido al efecto de la erosión del viento y del agua salada. </p>
+          </div>
+        </article>
+      </section>
+      <section class="video" data-aos="fade-down">
+        <h2>Descubre la playa de Las Catedrales</h2>
+        <iframe src="https://www.youtube.com/embed/czkbaCNj9pg?si=LjqOAl_UDOsivatf" title="YouTube video player" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Conoce Galicia — Herramientas HTML y CSS I</p>
+    </footer>
+
+    <script type="module" src="./js/scripts.js" defer></script>
+  </body>
+</html>

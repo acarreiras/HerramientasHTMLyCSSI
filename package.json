@@ -1,0 +1,36 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "PEC 1 de la asignatura Herramientas HTML y CSS I.",
+  "keywords": [
+    "[\"galicia\"",
+    "\"turismo\"",
+    "\"Lugo\"",
+    "\"Viajes\"]"
+  ],
+  "homepage": "https://github.com/acarreiras/HerramientasHTMLyCSSI#readme",
+  "bugs": {
+    "url": "https://github.com/acarreiras/HerramientasHTMLyCSSI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acarreiras/HerramientasHTMLyCSSI.git"
+  },
+  "license": "MIT",
+  "author": "Alberto Carreiras",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.1",
+    "parcel": "^2.16.1",
+    "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
